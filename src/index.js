@@ -1,10 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 
+const items = ['item one', 'item two', 'item three'];
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+
+//lesson 01
+// const element = React.createElement('ol', null,
+//     React.createElement('li', null, items[0]),
+//     React.createElement('li', null, items[1]),
+//     React.createElement('li', null, items[2]),
+// );
+
+//lesson 02
+// const element = React.createElement('ol', null,
+//     items.map(item => React.createElement('li', null, item)),
+// );
+
+//lesson 03
+const element = React.createElement('ol', null,
+    items.map((item, index) => React.createElement('li', { key: index }, item)),
 );
+
+root.render(element);
