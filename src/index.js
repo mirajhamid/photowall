@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
-const items = ['item one', 'item two', 'item three'];
+const items = ['item one', 'item two', 'item three', 'item four'];
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 //lesson 01
