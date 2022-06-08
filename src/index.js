@@ -17,8 +17,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 // );
 
 //lesson 03
-const element = React.createElement('ol', null,
-    items.map((item, index) => React.createElement('li', { key: index }, item)),
-);
+// const element = React.createElement('ol', null,
+//     items.map((item, index) => React.createElement('li', { key: index }, item)),
+// );
 
+//lesson 04
+const element =
+    <div>
+        <h1>Header</h1>
+        <ol>{items.map((item, index) => <li key={index}>{item}</li>)}</ol>
+    </div>;
 root.render(element);
