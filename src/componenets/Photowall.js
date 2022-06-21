@@ -13,7 +13,7 @@ import Photo from './Photo';
 //## functional Component
 function Photowall(props) {
 
-        return (<div className='photoGrid'>{props.posts.map((post, index) => <Photo post={post} key={index}/>)}</div>);
+        return (<div className='photoGrid'>{props.posts.map((post, index) => <Photo post={post} onRemovePhoto={props.onRemovePhoto} key={index}/>)}</div>);
 
 }
 
