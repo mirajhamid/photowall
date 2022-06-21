@@ -5,6 +5,12 @@ html {
     font-family: sans-serif;
 }
 
+
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+
 /* This is paragraph font size and font */
 p {
     font-size: 1.6rem;
@@ -13,7 +19,7 @@ p {
 
 /* This is h1 and since we do not have 'Billabong' we have to refer it as below*/
 h1 {
-    font-family: 'Billabong', serif;
+    font-family: Billabong, 'sans-serif';
     text-align: center;
     font-weight: 100;
     font-size: 13rem;
@@ -38,7 +44,7 @@ h1 {
     margin: 0 auto;
 }
 
-/* This is the class we use in photo
+/* This is the class we use contain photo
 it uses whatever the space taken by parent and get the 33.33% - 4rems*/
 .figure {
     flex-basis: calc(33.333% - 4rem);
@@ -46,4 +52,39 @@ it uses whatever the space taken by parent and get the 33.33% - 4rems*/
     padding: 2rem;
     flex-grow: 1;
     margin: 0 2rem 2rem 2rem;
+}
+
+/* This is the class we use in photo */
+.photo {
+    width: calc(100% + 4rem);
+    margin-left: -2rem;
+    margin-top: -2rem;
+    max-width: none;
+}
+
+/* This is for the button container div */
+.button-container {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* This is for the button class */
+button, .button {
+    border: 2px solid #f2f2f2;
+    background: none;
+    flex-basis: 48%;
+    display: inline-block;
+    line-height: 2;
+    text-decoration: none;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    color: red;
+    transition: all 0.2s;
+}
+
+button:hover,.button:hover, button:focus, .button:focus {
+    border-color: #00f;
+    outline: 0;
 }
