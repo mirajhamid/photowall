@@ -29,4 +29,6 @@ class Main extends Component {
     }
 }
 
+//https://www.freecodecamp.org/news/node-module-exports-explained-with-javascript-export-function-examples/
+//https://developpaper.com/the-difference-between-module-exports-and-exports-export-default-and-export/
 export default Main;
